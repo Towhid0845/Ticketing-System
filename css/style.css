@@ -2690,7 +2690,7 @@ th.sl {
   color: #000;
   font-size: 14px;
   padding: 5px;
-  min-width: 100px;
+  width: fit-content;
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
 }
@@ -2734,6 +2734,29 @@ th.sl {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 1800px) {
+  .time_control {
+    flex-direction: row !important;
+  }
+  .time_control button {
+    min-width: 100px !important;
+    width: unset !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .time_control {
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 575px) {
+  .input-group.position-relative .w-50 {
+    width: 30% !important;
+  }
+  .top_short_info-admin {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
