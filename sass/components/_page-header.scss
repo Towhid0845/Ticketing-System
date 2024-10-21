@@ -1,0 +1,27 @@
+.page_header {
+  margin-bottom: 20px;
+
+  .title {
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .ticket_info_details {
+    transition: none;
+  }
+}
+
+@media (max-width:575.98px) {
+  .page_header .title {
+    font-size: 18px !important;
+    text-align: left;
+  }
+}
+
+// admin part start
+.right_page_header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
